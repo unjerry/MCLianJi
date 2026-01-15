@@ -1,4 +1,4 @@
 
 
-git worktree remove ./archives archives
+git worktree remove ./archives
 
