@@ -1,0 +1,6 @@
+git
+7z
+java
+
+apt update
+apt install -y git
