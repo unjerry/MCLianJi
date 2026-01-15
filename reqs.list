@@ -1,6 +1,31 @@
 git
 7z
 java
+tmux
 
 apt update
 apt install -y git
+
+
+apt update
+apt install -y wget ca-certificates gnupg
+
+wget -O - https://packages.adoptium.net/artifactory/api/gpg/key/public \
+| gpg --dearmor \
+| tee /usr/share/keyrings/adoptium.gpg > /dev/null
+
+echo "deb [signed-by=/usr/share/keyrings/adoptium.gpg] \
+https://packages.adoptium.net/artifactory/deb bullseye main" \
+| tee /etc/apt/sources.list.d/adoptium.list
+
+apt update
+apt install -y temurin-21-jdk
+
+
+apt update
+apt install -y p7zip-full
+
+
+apt update
+apt install -y tmux
+
