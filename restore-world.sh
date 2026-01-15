@@ -30,6 +30,6 @@ fi
 
 # 解压
 echo "📦 Extracting world.zip..."
-unzip -q "$ARCHIVE" -d "$REPO_ROOT/data"
+7z x "$ARCHIVE" -o"$REPO_ROOT/data" -y
 
 echo "✅ World restored to $WORLD_DIR"
