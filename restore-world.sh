@@ -14,7 +14,7 @@ REPO_ROOT="$(cd "$SCRIPT_DIR/.." && pwd)"
 
 # 路径定义
 WORLD_DIR="$REPO_ROOT/data/world"
-ARCHIVE="$SCRIPT_DIR/world.zip"
+ARCHIVE="$SCRIPT_DIR/world.7z.001"
 
 # 检查 zip 是否存在
 if [ ! -f "$ARCHIVE" ]; then
